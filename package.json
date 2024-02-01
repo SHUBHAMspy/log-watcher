@@ -1,0 +1,24 @@
+{
+  "name": "log-watcher",
+  "version": "1.0.0",
+  "description": "a log-watcher app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHUBHAMspy/log-watcher.git"
+  },
+  "author": "Shubham Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SHUBHAMspy/log-watcher/issues"
+  },
+  "homepage": "https://github.com/SHUBHAMspy/log-watcher#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-quotegen": "^0.0.2",
+    "socket.io": "^4.7.4"
+  }
+}
