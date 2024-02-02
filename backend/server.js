@@ -3,7 +3,7 @@ const app = express();
 const httpServer = require('http').createServer(app)
 const {Server} = require('socket.io')
 const path = require('path'); 
-const Watcher = require('../watcher');
+const Watcher = require('./watcher');
 const generateLog = require('./utils/generateLogs')
 const PORT = process.env.PORT || 5000;
 
@@ -23,8 +23,8 @@ let watcher = new Watcher("logfile.log");
 watcher.start();
 
 io.on('connection', function(socket){
-  console.log(socket);
-  console.log("new connection established:"+socket.id);
+  // console.log(socket);
+  // console.log("new connection established:"+socket.id);
 
   watcher.on("process", function process(data) {
     socket.emit("update-log",data);
