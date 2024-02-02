@@ -39,7 +39,7 @@ class Watcher extends events.EventEmitter {
                     logs.forEach((elem) => {
                         if(this.store.length == TRAILING_LINES)
                         {
-                            console.log("queue is full");
+                            // console.log("queue is full");
                             this.store.shift();
                         }
                         this.store.push(elem);
@@ -55,7 +55,7 @@ class Watcher extends events.EventEmitter {
 
   start() {
     const watcher = this;
-    console.log(watcher);
+    // console.log(watcher);
     fs.open(this.watchFile,(err,fd) => {
         if(err) throw err;
         let data = '';
