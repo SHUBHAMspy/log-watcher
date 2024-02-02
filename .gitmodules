@@ -1,0 +1,3 @@
+[submodule "logwatcher-client"]
+	path = logwatcher-client
+	url = https://github.com/SHUBHAMspy/logwatcher-client.git
