@@ -3,7 +3,7 @@ const app = express();
 const httpServer = require('http').createServer(app)
 const {Server} = require('socket.io')
 const path = require('path'); 
-const Watcher = require('./watcher');
+const Watcher = require('../watcher');
 const generateLog = require('./utils/generateLogs')
 const PORT = process.env.PORT || 5000;
 
